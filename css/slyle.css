@@ -1,0 +1,397 @@
+/* fonts */
+
+@font-face{
+    font-family: "WinterSans_ExtraBold";
+    src: local("WinterSansTrial-ExtraBold"), url("../fonts/WinterSansTrial-ExtraBold.otf") format("otf");
+}
+
+@font-face{
+    font-family: "WinterSansTrial_Light";
+    src: local("WinterSansTrial-Light"), url("../fonts/WinterSansTrial-Light.otf") format("otf");
+}
+
+@font-face{
+    font-family: "WinterSansTrial_Regular";
+    src: local("WinterSansTrial-Regular"), url("../fonts/WinterSansTrial-Regular.otf") format("otf");
+}
+
+@font-face{
+    font-family: 'sf-pro';
+    src: local("sf-pro"), url("../fonts/sf-pro.ttf") format("ttf");
+}
+
+/* main */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'sf-pro', sans-serif;
+    font-size: 13px;
+    background-color: var(--bg_color);
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+p{
+    font-size: 1.6em;
+}
+
+/* h */
+
+h1{
+    font-size: 10em;
+    font-family: "WinterSansTrial_Regular", sans-serif;
+    color: var(--phone_red);
+    /* display: inline; */
+}
+
+h2{
+    font-size: 6em;
+}
+
+h3{
+    font-size: 5em;
+}
+
+h4{
+    font-size: 4em;
+}
+
+h5{
+    font-size: 2.7em;
+}
+
+h6{
+    font-size: 1.5em;
+}
+
+/* content */
+
+.container{
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+.header{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_black{
+    background-color: var(--black);
+    color: var(--white);
+    height: 75px;
+}
+
+.header__location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__menu{
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+
+li a{
+    font-size: 1.3em;
+}
+
+.header__phone{
+    display: flex;
+    background-color: var(--phone_red);
+    height: 100%;
+    width: 292.5px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* menu */
+
+.list_menu{
+    margin-top: 27px;
+    height: 105px;
+}
+
+.menu{
+    background-color: var(--white);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+
+.menu__icons{
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+}
+
+.icon{
+    width: 66px;
+    height: 66px;
+    background-color: var(--bg_color);
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.like{
+    position: relative;
+}
+
+.message{
+    position: absolute;
+    background-color: var(--phone_red);
+    border-radius: 50px;
+    height: 25.5px;
+    width: 25.5px;
+    right: -15%;
+    top: -15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message h6{
+    font-family: 'WinterSansTrial_ExtraBold', sans-serif;
+    font-size: 0.8em;
+    color: var(--white);
+}
+
+/* hero */
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content__hero{
+    margin-top: 27px;
+}
+
+.image__hero{
+    width: 1360.5px;
+    position: relative;
+}
+
+.hero__text__upper{
+    position: absolute;
+    top: 27px;
+    right: 27px;
+    border-top: 7.5px solid var(--phone_red);
+    border-right: 7.5px solid var(--phone_red);
+    max-width: 224px;
+    padding-right: 5px;
+}
+
+.hero__text__upper h4{
+    color: var(--white);
+    text-align: right;
+}
+
+.hero__text__lower{
+    position: absolute;
+    bottom: 0px;
+}
+
+.upper{
+    padding: 27px 33px 36px 2px;
+    color: var(--phone_red);
+}
+
+.lower{
+    max-width: 815px;
+    padding: 18px 33px 36px 0;
+}
+
+.text{
+    background-color: var(--bg_color);
+}
+
+.text h2{
+    font-family: "WinterSans_ExtraBold", sans-serif;
+}
+
+.hero__button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.billet{
+    width: 295.5px;
+    height: 295.5px;
+    background-color: var(--white);
+    padding: 27px;
+}
+
+.href{
+    background-color: var(--phone_red);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.href h5{
+    color: var(--white);
+}
+
+.billet__href{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.billet__text{
+    display: flex;
+    flex-direction: column;
+    /* gap: 27px; */
+}
+
+/* office line */
+
+.office_line{
+    margin-top: 120px;
+}
+
+.blac__line{
+    width: 100%;
+    height: 855px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.blac__line .container{
+    position: relative;
+}
+
+.line__text{
+    position: absolute;
+    margin-top: 120px;
+}
+
+.upper_text{
+    display: flex;
+    gap: 50px;
+}
+
+.upper_text img{
+    width: 90px;
+    height: 90px;
+}
+
+.center_text{
+    text-align: center;
+}
+
+/* office image */
+
+.office_image{
+    position: relative;
+    height: 330px;
+    margin-bottom: 107px;
+}
+
+.line__image_content{
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+}
+
+.image_line{
+    position: relative;
+}
+
+.line__text_with_border{
+    position: absolute;
+    max-width: 483px;
+    color: var(--white);
+    top: 31px;
+    left: 27px;
+    border-left: 7.5px solid var(--phone_red);
+    border-top: 7.5px solid var(--phone_red);
+    padding-left: 5px;
+    /* padding-right: 15px; */
+}
+
+.text_lower{
+    position: absolute;
+    bottom: 0;
+
+}
+
+.text_in_rectangle{
+    background-color: var(--bg_color);
+}
+
+.short{
+    font-family: "WinterSans_ExtraBold", sans-serif;
+    padding: 21px 33px 15px 0;
+    max-width: 351px;
+}
+
+.long{
+    padding: 15px 33px 18px 0;
+    max-width: 676px;
+}
+
+.address__line{
+    position: absolute;
+    background-color: var(--bg_color);
+    right: 0;
+    bottom: 0;
+    width: 147px;
+    height: 147px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.line__circle{
+    background-color: var(--phone_red);
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+/* root */
+
+:root{
+    --black: #1B1918;
+    --phone_red: #E5261E;
+    --white: #FFFFFF;
+    --bg_color: #F6F6F6;
+}
